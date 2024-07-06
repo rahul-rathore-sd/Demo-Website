@@ -1,0 +1,17 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}Home {% endblock %}
+
+{% block body %}
+<div class="container">
+    {% include "home/section-1.html" %}
+
+    {% include "home/section-2.html" %}
+
+    {% include "home/sec-3.html" %}
+
+    {% include "home/sec-4.html" %}
+    
+</div>
+{% endblock %}

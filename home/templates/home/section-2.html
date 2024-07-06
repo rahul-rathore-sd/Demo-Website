@@ -1,0 +1,21 @@
+{% load static %}
+<div class="row my-2">
+    <h5 style="margin-left: 20px;">Dry Fruits and Food</h5>
+</div>
+<div class="row">
+
+    <div class="col " style="display: flex; margin-left: 1px;">
+        <!-- my cards -->
+        {% for product in products %}
+        <div class="card" style="width: 18rem;height: 23rem; margin-right: 10px;">
+            <img src="{{product.image.url}}" style="width: 150px;" class="card-img-top" alt="{{product.name}}">
+            <div class="card-body">
+                <h5 class="card-title">{{product.name}}</h5>
+                <p class="card-text">{{product.description}}</p>
+                <a href="#" class="btn btn-primary">View-item</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<!-- section 2 end -->

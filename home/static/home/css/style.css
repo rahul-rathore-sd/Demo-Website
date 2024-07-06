@@ -1,0 +1,26 @@
+.main-heading {
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    max-width: 300px;
+}
+
+.sec-1{
+    border: 2px solid black;
+    max-height: 400px;
+    
+}
+span{
+    color: blue;
+}
+.con{
+    background-color: blue;
+    width: 35px;
+}
+ 

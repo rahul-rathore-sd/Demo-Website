@@ -1,0 +1,45 @@
+<!-- <h4 class="my-3">Coding Tips</h4>
+<div>
+    {% for video in videos %}
+    <div >
+        <h3>{{ video.title }}</h3>
+        <video width="280" height="240" controls>
+            <source src="{{ video.video.url }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h3>{{ video.title }}</h3>
+        <video width="280" height="240" controls>
+            <source src="{{ video.video.url }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h3>{{ video.title }}</h3>
+        <video width="280" height="240" controls>
+            <source src="{{ video.video.url }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    {% endfor %}
+</div> -->
+<!-- templates/myapp/video_gallery.html -->
+
+
+
+<h5 class="my-3" style="margin-left: 20px;">Coding Tips</h5>
+<div class="row ">
+    {% for video in videos %}
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">{{ video.title }}</h5>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!-- <iframe class="embed-responsive-item" src="{{ video.video.url }}" allowfullscreen></iframe> -->
+                    <video width="280" height="240" controls>
+                        <source src="{{ video.video.url }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
